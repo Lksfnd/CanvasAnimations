@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Animations - Lksfnd</title>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            color:white;
+            font-family: "Segoe UI Light", "Calibri", "Arial", sans-serif;
+        }
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #000000;
+            z-index: -1;
+        }
+
+        #selection,
+        select {
+            position: fixed;
+            top: 5px;
+            left: 10px;
+        }
+        #dynamicBox {
+            top: 25px;
+            right: 10px;
+            position: fixed;
+            min-width: 300px;
+            padding: 0.25em 2em;
+            border: 1px solid rgba(255,255,255,0.3);
+            background-color: rgba(255,255,255,0.1);
+        }
+        input {
+            width:100%;
+        }
+        a,a:visited {
+            text-decoration: none;
+            color: orange;
+            margin-right: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas>
+        Sorry, but your browser doesn't support HTML5 :(.
+    </canvas>
+    <div id="text" style="visibility:hidden;">Loading...</div>
+    <select id="selection">
+        <option>None</option>
+        <option>sine/cos/tan wave</option>
+        <option>Fractal Tree</option>
+    </select>
+    <div id="dynamicBox" style="visibility:hidden;"></div>
+
+    <!-- Generally used js files -->
+    <script src="modules/libs/Angle.js"></script>
+    <script src="modules/libs/Utils.js"></script>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
